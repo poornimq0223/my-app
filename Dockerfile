@@ -8,6 +8,6 @@ WORKDIR /app
 COPY /target/my-app-1.0-SNAPSHOT.jar ./app/app.jar
 
 # Specify the entrypoint to run the application
- ENTRYPOINT ["java", "-jar", "app/app.jar"]
+ # ENTRYPOINT ["java", "-jar", "app/app.jar"]
 
-#CMD ["java", "-cp", "app/app.jar", "com.mycompany.app.App"]
+CMD ["java", "-cp", "app/app.jar", "com.mycompany.app.App"]
